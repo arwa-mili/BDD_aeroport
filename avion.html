@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avion</title>
+    <script src="/mec.js">
+    </script>
+
+</head>
+
+<body>
+    <p> <input type="submit" name="submit3" value="Afficher Table" class="btn" onclick="location.href='Tableauav.php'"></p>
+    <form action="Resultav.php" method="get" onsubmit="return verif()">
+        <p align="center"> <u> <b>
+            <font size="6">Ajouter un avion</font>
+        </b></u></p>
+        <table border="0" width="100%">
+            <tr>
+                <td style="width: 193px">numéro immatricule
+                </td>
+                <td>
+                    <input type="number" name="num_imm" id="num_imm" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">date d'achat
+                </td>
+                <td>
+                    <input type="date" name="date_achat" id="date_achat" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">Type d'avion :
+                </td>
+                <td>
+                    <input type="text" name="type_av" id="type_av" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">Identifiant du propriétaire :
+                </td>
+                <td>
+                    <input type="number" name="id_prop" id="id_prop" size="20"></td>
+            </tr>
+
+
+        </table>
+
+        <p> <input type="submit" name="submit" value="Ajouter" class="btn"></p>
+    </form>
+</body>
+
+</html>

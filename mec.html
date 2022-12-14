@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanicien</title>
+    <script src="/mec.js">
+    </script>
+
+</head>
+
+<body>
+    <p> <input type="submit" name="submit3" value="Afficher Table" class="btn" onclick="location.href='Tableaumec.php'"></p>
+    <form action="Resultmec.php" method="get" onsubmit="return verif()">
+        <p align="center"> <u> <b>
+            <font size="6">Ajouter un mécanicien</font>
+        </b></u></p>
+        <table border="0" width="100%">
+            <tr>
+                <td style="width: 193px">identifiant du mécanicien
+                </td>
+                <td>
+                    <input type="text" name="id_mec" id="id_mec" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">nom :
+                </td>
+                <td>
+                    <input type="text" name="num" id="nom" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">adresse :
+                </td>
+                <td>
+                    <input type="text" name="adress" id="adress" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">num_tel :
+                </td>
+                <td>
+                    <input type="number" name="tel" id="tel" size="20"></td>
+            </tr>
+
+
+        </table>
+
+        <p> <input type="submit" name="submit" value="Ajouter" class="btn"></p>
+    </form>
+</body>
+
+</html>

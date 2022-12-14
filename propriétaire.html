@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un proprietaire</title>
+    <script src="/prop.js"></script>
+</head>
+
+<body>
+    <p> <input type="submit" name="submit4" value="Afficher Table" class="btn" onclick="location.href='Tableauprop.php'"></p>
+    <form action="Resultprop.php" method="get" onsubmit="return verif()">
+        <p align="center"> <u> <b>
+            <font size="6">Ajouter un Propriétaire</font>
+        </b></u></p>
+        <table border="0" width="100%">
+            <tr>
+                <td style="width: 193px">identifiant du propriétaire :
+                </td>
+                <td>
+                    <input type="number" name="id_prop" id="id_prop" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">nom :
+                </td>
+                <td>
+                    <input type="text" name="nom_prop" id="nom_prop" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">numero tel :
+                </td>
+                <td>
+                    <input type="text" name="num_tel" id="num_tel" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">adresse :
+                </td>
+                <td>
+                    <input type="text" name="adress" id="adress" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">
+                    <label for="typee">Type de propriétaire</label>
+                </td>
+                <td>
+                    <select name="type" id="typee">
+                        <option value="societe">societe</option>
+                        <option value="particuler">particulier</option>
+                      </select>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <p> <input type="submit" name="submit" value="Ajouter" class="btn"></p>
+    </form>
+</body>
+
+</html>

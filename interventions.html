@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interventions</title>
+
+    </script>
+
+</head>
+
+<body>
+    <p> <input type="submit" name="submit3" value="Afficher Table" class="btn" onclick="location.href='Tableauinterv.php'"></p>
+    <form action="Resultintervtot.php" method="get" onsubmit="return verif()">
+        <p align="center"> <u> <b>
+            <font size="6">Quel mécanicien voulez vous voir les interventions ?</font>
+        </b></u></p>
+        <table border="0" width="100%">
+            <tr>
+                <td style="width: 193px">Nom mécanicien :
+                </td>
+                <td>
+                    <input type="text" name="nom_mec" id="nom_mec" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">Date début :
+                </td>
+                <td>
+                    <input type="date" name="date_deb" id="date_deb" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">Date fin :
+                </td>
+                <td>
+                    <input type="date" name="date_fin" id="date_fin" size="20"></td>
+            </tr>
+
+
+
+        </table>
+
+        <p> <input type="submit" name="submit" value="Voir intervention" class="btn"></p>
+    </form>
+</body>
+
+</html>

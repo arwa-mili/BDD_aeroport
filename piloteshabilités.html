@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un proprietaire</title>
+    <script src="/prop.js"></script>
+</head>
+
+<body>
+    <p> <input type="submit" name="submit4" value="Afficher Table Pilotes" class="btn" onclick="location.href='Tableaupilote.php'"></p>
+    <p> <input type="submit" name="submit5" value="Afficher Table Habilité_TypeAvion" class="btn" onclick="location.href='Tableaupilavion.php'"></p>
+    <form action="Resultpil.php" method="get" onsubmit="return verif()">
+        <p align="center"> <u> <b>
+            <font size="6">Ajouter un Pilote</font>
+        </b></u></p>
+        <table border="0" width="100%">
+            <tr>
+                <td style="width: 193px">identifiant du pilote :
+                </td>
+                <td>
+                    <input type="number" name="id_pil" id="id_pil" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">nom pilote:
+                </td>
+                <td>
+                    <input type="text" name="nom_pil" id="nom_pil" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">numero brevet :
+                </td>
+                <td>
+                    <input type="text" name="num_brevet" id="num_brevet" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">numero telephone :
+                </td>
+                <td>
+                    <input type="text" name="num_tel" id="num_tel" size="20"></td>
+            </tr>
+            <tr>
+                <td style="width: 193px">adresse :
+                </td>
+                <td>
+                    <input type="text" name="adress" id="adress" size="20"></td>
+            </tr>
+
+
+
+        </table>
+
+        <p> <input type="submit" name="submit" value="Ajouter" class="btn"></p>
+    </form>
+</body>
+
+</html>
